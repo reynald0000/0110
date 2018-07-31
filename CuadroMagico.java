@@ -1,4 +1,3 @@
-
 package cuadromagico;
 import java.util.Scanner;
 /**
@@ -6,10 +5,6 @@ import java.util.Scanner;
  * @author Reynaldo Morillo
  */
 public class CuadroMagico {
-
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
         // TODO code application logic here
       int i,j,x, cont=1, n;
@@ -31,7 +26,6 @@ public class CuadroMagico {
       i=0;
       j=(n-1)/2;
       cuadro[i][j]=cont;
-       
       while(cont<x){
           if(i-1 >=0){
               if(j+1 <n){
@@ -55,7 +49,6 @@ public class CuadroMagico {
               }    
           }else{
               if(j+1<n){
-              
                   if(cuadro[n-1][j+1]==0){
                   i=n-1;
                   j=j+1;
@@ -77,7 +70,5 @@ public class CuadroMagico {
        }
        System.out.println();
        }
-    
-    }
-    
+    } 
 }
